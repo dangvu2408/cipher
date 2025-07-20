@@ -13,18 +13,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-input {
-    margin: 0;
-    font-family: inherit;
-}
-
 .title {
     text-align: center;
     font-size: 4.2em;
     font-weight: 800;
     font-style: italic;
+    background: linear-gradient(39deg, rgba(254, 207, 89, 1), rgba(255, 241, 204, 1));
     -webkit-background-clip: text;
-    color: linear-gradient(39deg, rgba(254, 207, 89, 1), rgba(255, 241, 204, 1));
+    -webkit-text-fill-color: transparent;
 }
 
 .card {
@@ -40,6 +36,9 @@ input {
 
 .row {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
 }
 
 .form_input_encrypt {
@@ -49,6 +48,7 @@ input {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.5;
+    font-family: inherit;
     color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
@@ -56,3 +56,4 @@ input {
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
