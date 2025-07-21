@@ -37,13 +37,14 @@
 .row {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 1rem;
+    gap: 1rem;
 }
 
 .form_input_encrypt {
     display: block;
-    width: 100%;
     padding: .375rem .75rem;
     font-size: 1.25rem;
     font-weight: 400;
@@ -57,3 +58,36 @@
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.btn_encrypt {
+    cursor: pointer;
+    width: 300px;
+    align-self: center;
+    padding: .375rem .75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5;
+    font-family: inherit;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .25rem;
+    color: #000;
+    background: linear-gradient(39deg, rgba(254, 207, 89, 1), rgba(255, 241, 204, 1));
+    background-size: 200% auto; 
+    background-position: left center;
+    background-clip: padding-box;
+    transition: background-position 0.3s ease-in-out;
+}
+
+.btn_encrypt:hover {
+    color: #000;
+    background-position: right center; 
+}
+
+.result_encrypt {
+    color: rgb(254, 207, 89);
+    font-size: 1.25rem;
+}
+
+.feather {
+    cursor: pointer;
+}
