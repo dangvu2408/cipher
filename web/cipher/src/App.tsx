@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import CaesarCipher from './components/Caesar';
-import VigenereCipher from './components/Vigenere';
+import CaesarEncrypt from './components/CaesarEncrypt';
+import VigenereEncrypt from './components/VigenereEncrypt';
+import AutokeyEncrypt from './components/AutokeyEncrypt';
 
 function App() {
   const [cipherType, setCipherType] = useState('');
@@ -9,9 +10,11 @@ function App() {
   const renderCipherComponent = () => {
     switch (cipherType) {
       case 'Caesar':
-        return <CaesarCipher />;
+        return <CaesarEncrypt />;
       case 'Vigenère':
-        return <VigenereCipher />;
+        return <VigenereEncrypt />;
+      case 'Autokey':
+        return <AutokeyEncrypt />;
       default:
         return null;
     }
