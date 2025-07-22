@@ -22,8 +22,10 @@ import HillEncrypt from './components/HillEncrypt';
 import HillDecrypt from './components/HillDecrypt';
 
 import RC4Encrypt from './components/RC4Encrypt';
+import RC4Decrypt from './components/RC4Decrypt';
 
 import DESEncrypt from './components/DESEncrypt';
+import DESDecrypt from './components/DESDecrypt';
 
 
 function App() {
@@ -72,9 +74,9 @@ function App() {
       case 'Hill (2x2)':
         return <HillDecrypt />;
       case 'RC4':
-        return <RC4Encrypt />;
+        return <RC4Decrypt />;
       case 'DES':
-        return <DESEncrypt />;
+        return <DESDecrypt />;
       default:
         return null;
     }
