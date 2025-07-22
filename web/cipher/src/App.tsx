@@ -121,6 +121,11 @@ function App() {
         </div>
         {renderDecryptComponent()}
       </div>
+
+      <div className='info'>
+        <p>Project nho nhỏ phục vụ cho học phần Lý thuyết mật mã - ET3310.</p>
+        <p>Đến giờ thì web vẫn chưa fix được lỗi giải mã DES =))), chắc phải tìm hiểu thêm...</p>
+      </div>
     </>
   )
 }

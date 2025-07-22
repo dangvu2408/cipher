@@ -39,7 +39,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1rem;
+    margin: 1rem 0;
     gap: 1rem;
 }
 
@@ -90,4 +90,20 @@
 
 .feather {
     cursor: pointer;
+}
+
+
+.info {
+    padding: .375rem .75rem;
+    margin: 0 2rem;
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    border-radius: .25rem;
+    background-color: #3B3B3B;
+}
+
+.info p {
+    margin: 0;
+    font-size: 20px;
 }
