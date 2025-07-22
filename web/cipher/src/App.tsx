@@ -1,14 +1,30 @@
 import { useState } from 'react'
 import './App.css'
 import CaesarEncrypt from './components/CaesarEncrypt';
+import CaesarDecrypt from './components/CaesarDecrypt';
+
 import VigenereEncrypt from './components/VigenereEncrypt';
+import VigenereDecrypt from './components/VigenereDecrypt ';
+
 import AutokeyEncrypt from './components/AutokeyEncrypt';
+import AutokeyDecrypt from './components/AutokeyDecrypt';
+
 import AffineEncrypt from './components/AffineEncrypt';
+import AffineDecrypt from './components/AffineDecrypt';
+
 import RailFenceEncrypt from './components/RailFenceEncrypt';
+import RailFenceDecrypt from './components/RailFenceDecrypt';
+
 import PlayfairEncrypt from './components/PlayfairEncrypt';
+import PlayfairDecrypt from './components/PlayfairDecrypt';
+
 import HillEncrypt from './components/HillEncrypt';
+import HillDecrypt from './components/HillDecrypt';
+
 import RC4Encrypt from './components/RC4Encrypt';
+
 import DESEncrypt from './components/DESEncrypt';
+
 
 function App() {
   const [encryptType, setEncryptType] = useState('');
@@ -42,19 +58,19 @@ function App() {
   const renderDecryptComponent = () => {
     switch (decryptType) {
       case 'Caesar':
-        return <CaesarEncrypt />;
+        return <CaesarDecrypt />;
       case 'Vigenère':
-        return <VigenereEncrypt />;
+        return <VigenereDecrypt />;
       case 'Autokey':
-        return <AutokeyEncrypt />;
+        return <AutokeyDecrypt />;
       case 'Affine':
-        return <AffineEncrypt />;
+        return <AffineDecrypt />;
       case 'Rail fence':
-        return <RailFenceEncrypt />;
+        return <RailFenceDecrypt />;
       case 'Playfair':
-        return <PlayfairEncrypt />;
+        return <PlayfairDecrypt />;
       case 'Hill (2x2)':
-        return <HillEncrypt />;
+        return <HillDecrypt />;
       case 'RC4':
         return <RC4Encrypt />;
       case 'DES':
