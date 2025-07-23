@@ -107,7 +107,7 @@ function App() {
       <div className="card">
         <div className='row'>
           <select className="form_input_encrypt" id='select' name='select' required onChange={e => setDecryptType(e.target.value)}>
-            <option value={""}>Chọn loại mã hóa</option>
+            <option value={""}>Chọn loại giải mã</option>
             <option value={"Caesar"}>Caesar</option>
             <option value={"Vigenère"}>Vigenère</option>
             <option value={"Autokey"}>Autokey</option>
